@@ -1,0 +1,26 @@
+{
+  "name": "nodeportfolio",
+  "version": "1.0.0",
+  "description": "Kent Okazaki's Portfolio",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.0",
+    "express-handlebars": "^3.1.0",
+    "semantic-ui": "^2.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/randomslap/nodePortfolio.git"
+  },
+  "author": "Kent Okazaki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/randomslap/nodePortfolio/issues"
+  },
+  "homepage": "https://github.com/randomslap/nodePortfolio#readme"
+}
