@@ -12,14 +12,16 @@ html {
 
 /* Intro */
 
+
 .masthead.segment {
 	min-height: 700px;
 	padding: 1em 0em;
 	padding-top: 1em;
 	padding-right: 0em;
-	padding-bottom: 1em;
+	padding-bottom: 0em;
 	padding-left: 0em;
 	background-color: transparent !important;
+	z-index: 2;
 }
 
 .masthead h1.ui.header {
@@ -52,11 +54,26 @@ html {
 	transform: rotate(90deg);
 }
 
+.masthead div#introBtn {
+	transition: 0.2s;
+	color: black;
+	border-color: black !important;
+}
+
+.masthead div#introBtn:hover {
+	transition: 0.2s;
+	color: white;
+}
+
 /* Vertical Nav
 
 
 
 /* About Me */
+
+.ui.vertical.body {
+	background-color: white !important;
+}
 
 .ui img#bioImg {
 	height: 50% !important;
@@ -68,11 +85,12 @@ div.eight #aboutMeSegment {
 }
 
 div.ui.segment span {
-	font-size: 10vw;
+	/* font-size: 10vw; */
+	font-size: 125px;
 }
 
 div.ui.segment h2.iconFont {
-	font-size: 2.25vw;
+	font-size: 20px;
 }
 
 div.ui.segment i.fa-html5 {
@@ -93,7 +111,7 @@ p#aboutMe {
 
 /* Media Queries */
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
 	#introMenu {
 		display: none;
 	}
@@ -103,6 +121,13 @@ p#aboutMe {
 
 	div.eight #aboutMeSegment {
 		margin-top: 0em !important;
+	}
+
+	div.ui.segment h2.iconFont {
+		font-size: 2.25vw;
+	}
+	div.ui.segment span {
+		font-size: 10vw;
 	}
 }
 

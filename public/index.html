@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Kent Okazaki's Portfolio</title>
+		<link rel="stylesheet" href="assets/css/reset.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="semantic/dist/semantic.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+			integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+			crossorigin="anonymous"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="stylesheet" href="assets/css/animate.css" />
+		<link rel="stylesheet" href="assets/css/particles.css" />
+		<link rel="stylesheet" href="assets/css/nav.css" />
+	</head>
+
+	<body>
+		<div id="particles-js" data-aos="fade-in" data-aos-delay="200"></div>
+		<div class="ui" id="pusher">
+			<div
+				class="ui vertical masthead massive center aligned segment animated zoomIn"
+				id="1"
+			>
+				<div class="ui text container animated fadeIn slow">
+					<h1 class="ui header">
+						Hi, my name is <strong>Kent Okazaki.</strong>
+					</h1>
+					<h2>Full-stack web developer</h2>
+					<a href="#2">
+						<div
+							class="ui huge inverted black button"
+							id="introBtn"
+						>
+							Learn More About Me
+							<i class="fas fa-arrow-right introArrow"></i>
+						</div>
+					</a>
+				</div>
+				<div class="ui container animated fadeInUp slow" id="introMenu">
+					<div class="ui large secondary pointing menu centered">
+						<a class="item" href="#2">About Me</a>
+						<a class="item" href="#3">Portfolio</a>
+						<a class="item">Contact Me</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ui vertical segment body" id="2">
+			<div class="ui grid row stackable centered container">
+				<div class="row">
+					<div
+						class="sixteen wide column center aligned"
+						data-aos="fade-in"
+						data-aos-delay="100"
+					>
+						<h1>About Me</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div
+						class="five wide column"
+						data-aos="fade-right"
+						data-aos-delay="200"
+					>
+						<div class="ui segment">
+							<img
+								class="ui medium circular image fluid centered"
+								id="bioImg"
+								src="assets/media/bio.JPG"
+								alt="Bio Picture"
+							/>
+						</div>
+					</div>
+					<div
+						class="eight wide column"
+						data-aos="fade-in"
+						data-aos-delay="200"
+					>
+						<div class="ui segment" id="aboutMeSegment">
+							<p id="aboutMe">
+								Hello, my name is Kent Okazaki and I am a web
+								developer. I am currently taking a Full-Stack
+								web development bootcamp course at the
+								University of California San Diego by TrilogyEd.
+								I have a background in programming languages
+								such as Java and C++. Due to my curiosity, I
+								introduced myself into programming through
+								creating community addons for video games and
+								"rooting" android devices during my four years
+								of highschool. I voluntarily created addons for
+								games such as ArmA2 and ArmA3. In my sophomore
+								year of community college, I took a Java class
+								for a semester. Through my journey of growing
+								up, I have always been into techonology. I
+								decided to look into web development because I
+								was curious to see what it takes to create a
+								great website. Moreover, I wanted to challenge
+								myself and learn more about the aspect of
+								programming.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="ui grid row" data-aos="fade-in">
+					<div class="ui thirteen wide column">
+						<div class="ui horizontal segments">
+							<div class="ui segment center aligned">
+								<span data-aos="fade-in" data-aos-delay="300">
+									<i class="fab fa-html5"></i>
+									<h2 class="iconFont">Front-End</h2>
+								</span>
+							</div>
+							<div class="ui segment center aligned">
+								<span data-aos="fade-in" data-aos-delay="400">
+									<i class="fas fa-mobile-alt"></i>
+									<h2 class="iconFont">Responsive</h2>
+								</span>
+							</div>
+							<div class="ui segment center aligned">
+								<span data-aos="fade-in" data-aos-delay="500">
+									<i class="fas fa-lightbulb"></i>
+									<h2 class="iconFont">Creative</h2>
+								</span>
+							</div>
+							<div class="ui segment center aligned">
+								<span data-aos="fade-in" data-aos-delay="600">
+									<i class="fab fa-node"></i>
+									<h2 class="iconFont">Back-End</h2>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ui vertical segment body" id="3">
+			<div class="ui grid row stackable centered container">
+				<div class="row">
+					<div
+						class="sixteen wide column center aligned"
+						data-aos="fade-in"
+						data-aos-delay="100"
+					>
+						<h1>Portfolio</h1>
+					</div>
+				</div>
+				<div class="ui grid row">
+					<div class="ui sixteen wide column">
+						<div class="ui horizontal">
+							<div
+								class="ui link cards centered column"
+								id="projects"
+							></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script
+		src="https://code.jquery.com/jquery-3.1.1.min.js"
+		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+		crossorigin="anonymous"
+	></script>
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<script src="semantic/dist/semantic.min.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="assets/js/app.js"></script>
+	<script src="assets/js/particle.js"></script>
+	<script src="assets/js/aos.js"></script>
+</html>

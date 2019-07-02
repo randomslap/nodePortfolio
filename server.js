@@ -1,18 +1,19 @@
-var express = require("express");
-var exphbs = require("express-handlebars");
-var app = express();
-var path = require("path");
-var PORT = process.env.PORT || 5400;
+const express = require("express");
+const app = express();
+const path = require("path");
+const mongojs = require("mongojs");
+const PORT = process.env.PORT || 5400;
+
+const databaseURL = "portfolio";
+const collections = ["projects"];
+
+const db = mongojs(databaseURL, collections);
 
 app.use(express.static(path.join(__dirname, "public")));
 
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-app.set("view engine", "handlebars");
+require("./routes/htmlRoutes")(app, path);
+require("./routes/apiRoutes")(app, path, db);
 
-app.get("/", function(req, res) {
-	res.render("portfolio");
-});
-
-app.listen(PORT, function() {
-	console.log("Server listening on: http://localhost:" + PORT);
-});
+app.listen(PORT, () =>
+	console.log("Server listening on: http://localhost:" + PORT)
+);
