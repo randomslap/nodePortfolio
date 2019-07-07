@@ -12,7 +12,6 @@ html {
 
 /* Intro */
 
-
 .masthead.segment {
 	min-height: 700px;
 	padding: 1em 0em;
@@ -107,6 +106,13 @@ div.ui.segment i.fa-node {
 
 p#aboutMe {
 	text-indent: 50px;
+}
+
+/* Porfolio */
+
+img.projectImg {
+	display: block;
+	height: 20vh;
 }
 
 /* Media Queries */

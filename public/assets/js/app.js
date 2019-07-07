@@ -16,8 +16,8 @@ $(document).ready(() => {
 			const card =
 				"<div class='card column' data-id= " +
 				project._id +
-				"><img src=" +
-				project.img +
+				"><img class='projectImg' src=" +
+				JSON.stringify(project.img) +
 				"/><div class=content><div class='header'>" +
 				project.name +
 				"</div><div class='meta'>" +
