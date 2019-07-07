@@ -5,7 +5,7 @@ const mongojs = require("mongojs");
 const mongoose = require("mongoose");
 const PORT = process.env.PORT || 5400;
 
-const databaseURL = "portfolio";
+const databaseURL = process.env.MONGODB_URI || "portfolio";
 const collections = ["projects"];
 
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/portfolio";
